@@ -18,6 +18,11 @@ const productSchema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     },
+    featured: {
+        type: Boolean,
+        default: false
+    }
+    ,
     company: {
         type: String,
         enum: {
